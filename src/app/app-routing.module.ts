@@ -4,11 +4,13 @@ import { HomeComponent } from './home/home.component';
 import { ResidencesComponent } from './Residences/residences/residences.component';
 import { NotFoundComponent } from './not-found/not-found.component';
 import { ResidenceDetailsComponent } from  './Residences/residence-details/residence-details.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
   { path: 'home', component: HomeComponent },
   { path: 'residences', component: ResidencesComponent },
+  { path: 'nav-bar', component: NavBarComponent },
   { path: 'residence/:id', component: ResidenceDetailsComponent },
   { path: '**', component: NotFoundComponent }
 ];
